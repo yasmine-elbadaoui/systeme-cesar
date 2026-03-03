@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système César</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- ===== HEADER ===== -->
+<header>
+    <img src="images/logo1.jpeg" alt="Système César" class="logo">
+
+    <nav class="navigation">
+        <a href="#accueil">Accueil</a>
+        <a href="#chiffrer">Chiffrer</a>
+        <a href="#dechiffrer">Déchiffrer</a>
+    </nav>
+</header>
+
+<hr>
+
+<!-- ===== PAGE ACCUEIL ===== -->
+<section id="accueil" class="interieur">
+
+    <div class="texte">
+        <h1>Système César</h1>
+
+        <p>
+            Algorithme cryptographique historique basé sur un décalage
+            circulaire fixe des caractères, illustrant les fondements
+            des techniques de substitution en sécurité de l'information.
+        </p>
+
+        <h3>Created by Yasmine El-Badaoui</h3>
+    </div>
+
+    <img src="images/cesar.jpeg" alt="Image César" class="image1">
+
+</section>
+
+<!-- ===== PAGE CHIFFRER ===== -->
+<section id="chiffrer" class="page">
+
+    <h1>Chiffrer</h1>
+
+    <label>Message :</label>
+    <input type="text" id="mess">
+
+    <label>Décalage :</label>
+    <input type="number" id="dec"><br>
+
+    <button onclick="encrypt()">Chiffrer</button>
+
+    <label>Résultat :</label>
+    <input type="text" id="res">
+
+    <img src="images/logo.jpeg" class="logo-page" alt="logo cesar">
+
+</section>
+
+<!-- ===== PAGE DECHIFFRER ===== -->
+<section id="dechiffrer" class="page">
+
+    <h1>Déchiffrer</h1>
+
+    <label>Message :</label>
+    <input type="text" id="mess2">
+
+    <label>Décalage :</label>
+    <input type="number" id="dec2"><br>
+
+    <button onclick="decrypt()">Déchiffrer</button>
+
+    <label>Résultat :</label>
+    <input type="text" id="res2">
+
+    <img src="images/logo.jpeg" class="logo-page" alt="logo cesar">
+
+</section>
+ <script src="script.js" ></script>
+</body>
+</html>

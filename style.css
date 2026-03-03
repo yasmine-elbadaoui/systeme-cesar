@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* ===== GENERAL ===== */
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px 30px;   /* petit élégant */
+    background-color:black;
+}
+
+.logo{
+    width:55px;
+}
+
+.navigation a{
+    margin-left:20px;
+    text-decoration:none;
+    font-size:16px;
+    color:rgb(111, 48, 6);
+    font-weight:600;
+    transition:0.3s;
+}
+
+.navigation a:hover{
+    color:white;
+}
+
+.navigation a:focus{
+    color:white;
+}
+
+/* ===== LIGNE SOUS HEADER ===== */
+
+hr{
+    border:none;
+    height:1px;
+    background-color:rgb(111, 48, 6);
+    opacity:0.3;
+    margin:0;
+}
+
+/* ===== PAGE ACCUEIL ===== */
+
+#accueil{
+    background-color:black;
+    color:white;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.accueil-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:85%;
+}
+
+
+
+/* ===== TEXTE ===== */
+
+.texte{
+    width:45%;
+}
+.texte h3{
+    border-radius: 3px rgb(111, 48, 6);
+}
+
+.texte h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.texte p{
+    line-height:1.6;
+    margin-bottom:25px;
+    font-size:20px;
+}
+
+.author{
+    display:inline-block;
+    padding:8px 15px;
+    border:2px dashed rgb(111, 48, 6);
+    border-radius:8px;
+}
+
+/* ===== IMAGE DROITE ===== */
+
+.image1{
+    width:320px;
+    border-radius:15px;
+    box-shadow:0 0 25px rgb(111, 48, 6);
+}
+
+/* ================================================= */
+/* ========= PAGE CHIFFRER & DECHIFFRER =========== */
+/* ================================================= */
+
+#chiffrer,
+#dechiffrer{
+    background-color:rgb(111, 48, 6);
+    color:white;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+/* ===== TITRE ===== */
+
+.page h1{
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+/* ===== LABEL ===== */
+
+.page label{
+    display:block;
+    margin-top:20px;
+    font-size:15px;
+}
+
+/* ===== INPUT ===== */
+
+.page input{
+    width:280px;
+    padding:10px;
+    margin-top:8px;
+    border:none;
+    border-radius:6px;
+    outline:none;
+    font-family:'Poppins', sans-serif;
+}
+
+/* ===== BOUTON ===== */
+
+.page button{
+    margin-top:25px;
+    padding:12px 25px;
+    background-color:black;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.page button:hover{
+    background-color:white;
+    color:rgb(111, 48, 6);
+    transform:scale(1.05);
+}
+
+/* ===== LOGO C (SEULEMENT PAGE 2 & 3) ===== */
+
+.logo-page{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+}
+
+/* cacher logo dans accueil */
+
+#accueil .logo-page{
+    display:none;
+}
